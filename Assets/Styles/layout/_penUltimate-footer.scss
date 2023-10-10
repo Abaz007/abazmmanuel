@@ -1,0 +1,113 @@
+//penUltimate-footer for welcome page 
+.book-a-chat{
+    width: 100%;
+    margin-bottom: 80px;
+    background-color: $Fade-black;
+    @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+
+    @include mobile{
+        margin-bottom: 60px
+    }
+
+    div{
+        @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+
+        margin: 50px 0;
+    }
+
+    h4{
+       font-weight: 600;
+       color: $White;
+       font-size: 1.4rem;
+    //    margin-top: 1.5rem;
+       margin-bottom: 1rem;
+       font-family: $header-fonts;
+       text-align: center;
+    }
+
+
+    p{
+        color: $Dark-gray;
+        margin-bottom: 1rem;
+        font-family: $text-fonts;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    a{
+        padding: 0.9rem 1.2rem;
+        color: $White;
+        background-color: $Green;
+        border: 1px solid transparent;
+        font-family: $text-fonts;
+        cursor: pointer;
+        text-decoration: none;
+
+        @include mobile{
+            padding: 0.5rem 0.7rem;
+        }
+    }
+}
+
+
+
+
+
+// penultimate-footer for other pages
+.penultimate-footer{
+    width: 70%;
+    @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+    background-color: $Fade-black;
+    margin-bottom: 80px;
+    @include mobile{
+        width: 90%;
+        margin-bottom: 60px; 
+    }
+
+
+    h4{
+        color: $White;
+        margin: 1.2rem 0px;
+        text-align: center;
+        font-family: $header-fonts;
+        font-weight: bolder;
+        font-size: 2rem;
+
+    }
+
+    .break-line{
+        width: 90%;
+        opacity: 0.4;
+        height: 1px;
+        background-color: $White;
+        margin-bottom: 1.8rem;
+
+        @include mobile{
+            width: 100%;
+        }
+    }
+}
+
+.flex-container {
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-bottom: 1.8rem;
+    @include Display($display: flex, $justify-content: center, $align-items: center);
+
+    div{
+        border: 1px solid $Gray;
+        padding: .5rem 1rem;
+        font-family: $text-fonts;
+        font-size: 14px;
+        text-align: center;
+        
+        a{
+            text-decoration: none;
+            color: $Gray;
+        }
+    }
+
+    
+}
+

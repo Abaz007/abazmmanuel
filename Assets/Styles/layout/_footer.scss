@@ -1,0 +1,52 @@
+footer{
+    @include Display($display: flex, $justify-content: center, $align-items: center);
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba($Gray, 0.5); 
+    font-family: $text-fonts;
+    margin-bottom: 50px;
+    
+    @include mobile{
+        border-top: none;
+    }
+}
+
+.footer-container{
+    @include Display($display: flex, $justify-content: space-between, $align-items: center);
+    width: 90%;
+
+    @include mobile{
+        @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+        width: 90%;
+        border-top: 1px solid $Gray;
+        padding-top: 10px;
+    }
+
+    div:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    div{
+        @include mobile{
+            text-align: center;
+        }
+    }
+
+    p, a{
+        color: $White;
+        text-decoration: underline;
+        font-size: 1rem;
+        
+    }
+    
+    span{
+        color: #6B7280;
+        line-height: 2;
+        font-size: 1rem;
+    }
+    
+    .socials{
+        display: flex;
+        gap: 10px;
+    }
+}
+

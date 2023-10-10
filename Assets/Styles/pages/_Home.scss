@@ -1,0 +1,98 @@
+.container{
+    width: 75%;
+    @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+    @include mobile{
+        width: 90%;
+    }
+}
+
+
+
+.container-header-text{
+    color: $White;
+    width: 100%;
+    line-height: 1;
+    margin-bottom: 60px;
+    position: relative;
+    @include mobile{
+        margin-bottom: 40px;
+    }
+
+    h2{
+        font-size: clamp(2.2rem, 7vw, 4rem); 
+        font-family: $header-fonts;   
+    }
+
+    .overlay3{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        z-index: 9;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        top: 10px;
+    }
+    
+}
+
+
+.image-container {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 90px;
+    width: 100%;
+    position: relative;
+    background-color: $Fade-black;
+    @include Display($display: flex, $align-items: center, $flex-direction: column);
+
+    @include mobile{
+        margin-bottom: 60px;
+    }
+
+    img{
+        width: 100%;
+        flex-shrink: 0;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }
+
+    // styling for second to the last image
+    .adjust-width{
+        width: 80% !important;
+        @include mobile{
+            width: 80% !important;
+        }
+    }
+}
+
+
+
+.image-container div{
+    @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column); 
+    margin: 40px 0;
+
+    @include mobile{
+        margin: 25px 0; 
+    }
+
+    h3{
+        color: $White;
+        text-align: center;
+        font-weight: 800;
+        font-size: 2.1rem;
+        font-family: $header-fonts;
+    
+        @include mobile{
+            font-size: 1.7rem;
+            padding: 0 5px;
+        }
+    }
+}
+
+
+
+
+
+
+
+

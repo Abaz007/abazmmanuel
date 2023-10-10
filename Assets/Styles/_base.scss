@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Neue Haas Grotesk Display Pro";
+    src: url('../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Roman.ttf') format('truetype'),
+         url('../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Roman.woff') format('woff'),
+         url('../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Roman.woff2') format('woff2'),
+         url('../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Roman.eot') format('eot');
+         font-weight: normal;
+}
+@font-face {
+    font-family: "Neue Haas Grotesk Display Pro";
+    src: url('../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Bold.ttf') format('truetype'),
+         url('../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Bold.woff') format('woff'),
+         url('../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Bold.woff2') format('woff2'),
+         url('../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Bold.eot') format('eot');
+         font-weight: bold;
+}
+
+@font-face {
+    font-family: "DM Mono";
+    src: url('../Fonts/DM_Mono/DMMono-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../Fonts/DM_Mono/DMMono-Regular.woff') format('woff'), /* Older Browsers */
+         url('../Fonts/DM_Mono/DMMono-Regular.ttf') format('truetype'); /* Fallback for very old browsers */
+}
+
+// this fonts is used only once on soundcloud page
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Mulish:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,19 @@
+@import"./mixin";
+@import"./variable";
+@import"./base";
+@import"./component";
+
+// -----layout------
+@import"./layout/navbar";
+@import"./layout/hero-section";
+@import"./layout/footer";
+@import"./layout/penUltimate-footer";
+@import"./layout/carousel";
+@import"./layout/project-phase";
+
+
+
+// -------pages----------
+@import"./pages/home";
+@import"./pages/others";
+@import"./pages/sound-cloud";

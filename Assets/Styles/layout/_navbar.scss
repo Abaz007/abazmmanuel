@@ -1,0 +1,152 @@
+
+header{
+    @include Display($display: flex, $justify-content: center, $align-items: center);
+    position: relative;
+}
+
+/* Style the navbar */
+.navbar{
+    @include Display($display: flex, $justify-content: space-between, $align-items: center);
+    border: 1px solid white; /* White border */
+    color: white;
+    width: 90%;
+    padding: 20px 20px;
+    margin-top: 40px;
+
+    @include mobile{
+
+        @include Display($display: flex, $justify-content: none, $align-items: center, $flex-direction: column);
+        position: relative;
+        background-color: $Black;
+        padding: 15px 10px;
+        margin-top: 20px;
+        width: 95%;
+    }
+}
+
+/* Style the navigation list */
+.nav-list {
+    list-style: none;
+    @include Display($display: flex, $align-items: center);
+    @include mobile{
+        @include Display($display: none, $align-items: center, $justify-content: center, $flex-direction: column);
+        margin-top: 30px;
+    }
+
+}
+
+
+/* Style the logo */
+.logo{
+    @include mobile{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    
+        @include mobile{
+            width: 60%;
+            z-index: 12;
+        }
+    }
+}
+
+
+
+/* Style the list items */
+.nav-item {
+    margin-right: 1.2rem;
+    cursor: pointer;
+    // transition: 0.5s;
+    font-family: $text-fonts;
+
+    @include mobile{
+        margin-right: 0;
+        margin-bottom: 20px;
+        // margin-top: 50px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $Gray;
+        
+    }
+}
+
+/* Style the last list item with green background */
+.green-bg {
+    background-color: $Green;
+    // padding: 0.5rem 1rem;
+    padding: 0.9rem 1.2rem;
+    border: 1px solid transparent;
+
+    -webkit-user-select: none; /* For Safari 3+, Safari on iOS 3+ */
+    -moz-user-select: none; /* For Mozilla Firefox */
+    -ms-user-select: none; /* For Microsoft Edge */
+    user-select: none; /* Standard property */
+
+    @include mobile{
+        // padding: 0.7rem 1rem;
+        padding: 0.5rem 0.7rem;
+        white-space: nowrap;
+        // width: 100%;
+    }
+}
+
+
+/* Styles for the hamburger */
+.hamburger{
+    display: none;
+    @include mobile{
+        width: 30px; /* Adjust the width as needed */
+        height: 20px; /* Adjust the height as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer; /* Make it look clickable */
+    }
+
+    /* Styles for the individual bars */
+    .bar {
+
+        display: none;
+        @include mobile{
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: $Gray;
+            border-radius: 2px;
+            transition: transform 0.3s;
+            transform-origin: center;  
+        }
+    }
+}
+
+
+/* Styles for the X shape when clicked */
+.hamburger.active .bar:first-child {
+    transform: rotate(-45deg) translate(-5px, 6px) ;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.hamburger.active .bar:last-child {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+  
+
+
+
+
+
+
+
+

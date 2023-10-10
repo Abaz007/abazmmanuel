@@ -1,0 +1,157 @@
+//  -------------buttons-------------
+.read-through-btn{
+    color: $Green;
+    border: 1px solid $Green;
+    background-color: transparent;
+    padding: 0.9rem 1.2rem;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: $text-fonts;
+
+    -webkit-user-select: none; /* For Safari 3+, Safari on iOS 3+ */
+    -moz-user-select: none; /* For Mozilla Firefox */
+    -ms-user-select: none; /* For Microsoft Edge */
+    user-select: none; /* Standard property */
+    @include mobile{
+        padding: 0.5rem 0.7rem;
+
+        margin-top: 10px;
+        // margin-bottom: 25px;
+    }
+}
+
+.send-request-btn{
+    color: $White;
+    border: 1px solid transparent;
+    background-color: $Green;
+    padding: 0.9rem 1.2rem;
+    
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: $text-fonts;
+
+    -webkit-user-select: none; /* For Safari 3+, Safari on iOS 3+ */
+    -moz-user-select: none; /* For Mozilla Firefox */
+    -ms-user-select: none; /* For Microsoft Edge */
+    user-select: none; /* Standard property */
+
+    @include mobile{
+        padding: 0.5rem 0.7rem;
+
+        // margin-bottom: 25px;
+    }
+}
+
+
+
+
+.line-break-component{
+    width: 80%;
+    opacity: 0.2;
+    // height: 1px;
+    border: 1px solid var(--white, #FFF); /* Adjust the thickness as needed */
+    height: 0;
+    margin-bottom: 5rem;
+
+    @include mobile{
+        width: 95%;
+        margin-bottom: 3rem;
+        margin-top: 0;
+        
+    }
+    // margin-bottom: 5rem;
+}
+
+.span-heading{
+    color: $White;
+    line-height: 2;
+    font-size: 1.5rem;
+    font-family: $header-fonts;
+    font-weight: 500;
+}
+
+.span-sub-heading{
+    color: $White;
+    line-height: 2;
+    font-size: 1rem;
+    font-family: $text-fonts;
+
+}
+
+// styling for all the pages with the main tag
+.primary-box{
+    width: 100%;
+    @include Display($display: flex, $justify-content: center, $flex-direction: column, $align-items: center);
+}
+
+
+// additional styling that can be added to any element when needed
+.black-bg{
+    background-color: $Black;
+}
+
+.green-text{
+    color: $Green !important;
+}
+
+.customize-width{
+    width: 100% !important;
+}
+
+
+
+.bottom-spacing{
+    margin-bottom: 15px;
+}
+.bottom-spacing2{
+    margin-bottom: 30px;
+}
+
+.De-link{
+    text-decoration: none;
+    color: $Green;
+}
+
+.De-link2{
+    text-decoration: none;
+    color: $Dark-gray;
+}
+
+.auto-height{
+    height: auto;
+}
+
+.margin-top{
+    margin-top: -130px;
+
+    @include mobile{
+        margin-top: 0;
+    }
+}
+
+.weight{
+    font-weight: 800;
+}
+// active class
+.active{
+    display: flex !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

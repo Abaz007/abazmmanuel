@@ -1,0 +1,357 @@
+.previous-page-box{
+    width: 85%;
+    border: 1px solid $White;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding-left: 25px;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    @include Display($display: flex, $align-items: center);
+    
+    @include mobile{
+        width: 90%;
+        padding-left: 20px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 20px;
+    }
+
+    p{
+        color: $White;
+        padding-left: 5px;
+        font-family: $text-fonts;
+    }
+
+    a,img{
+        text-decoration: none;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.project-title{
+    @include Display($display: flex, $align-items: left, $justify-content: center,  $flex-direction: column,);
+    border: 1px solid $White;
+    margin-bottom: 60px;
+    padding-left: 25px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 85%;
+    @include mobile{
+        width: 90%;
+        padding-left: 20px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+
+    span{
+        font-family: $text-fonts;
+        line-height: 2;
+    }
+
+
+    h1{
+        color: $White;
+        font-family: $header-fonts;
+        font-weight: bolder;
+    }
+}
+
+.wrapper{
+    @include Display($display: flex, $align-items: center, $justify-content: center,  $flex-direction: column,);
+    width: 60%;
+    @include mobile{
+        width: 90%;
+        // border: 1px solid red;
+    }
+
+}
+
+
+.content-wrapper{
+    width: 100%;
+    margin-bottom: 60px;
+    
+    h5{
+        line-height: 2.5;
+        color: white;
+        font-family: $header-fonts;
+        font-size: 1.2rem;
+    }
+    
+    p{
+        font-family: $text-fonts;
+        color: $Dark-gray; 
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+    li{
+        color: $Dark-gray; 
+        font-size: 15px;
+        line-height: 2;
+        padding-left: 15px;
+        list-style-type: none;
+        position: relative;
+        font-family: $text-fonts;
+    }
+
+    li::before{
+        content:"";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $Dark-gray;
+        // display: flex;
+        margin-right: 10px;
+        top: 12px;
+        left: 5px;
+        // right: 0;
+    }
+
+}
+
+
+
+.custom-list-style-type{
+    position: relative;
+    padding-left: 15px;
+}
+.custom-list-style-type::before{
+    content:"";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $Dark-gray;
+    margin-right: 10px;
+    top: 10px;
+    left: 5px;
+}
+
+
+
+
+.image-wrapper{
+    @include Display($display: flex, $justify-content: space-between,);
+    @include mobile{
+        @include Display($display: flex, $justify-content: space-between, $align-items: center, $flex-direction: column)
+    }
+    
+    img{
+        width: 48%;
+        @include mobile{
+
+            width: 100%;
+        }
+    }
+
+    img:first-child{
+        @include mobile{
+            margin-bottom: 10px;
+
+        }
+    }
+
+}
+
+
+
+.custom-container{
+    width: 80%;
+    border-top: 1px solid $Fade-black;
+    border-bottom: 1px solid $Fade-black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 60px;
+    color: $Green;
+    font-family: $text-fonts;
+    font-weight: 7000;
+    
+    @include mobile{
+        width: 95%;
+    }
+}
+
+.design-showcase{
+    // margin-top: ;
+    margin-bottom: 90px;
+    @include mobile{
+        margin-bottom: 60px;   
+    }
+}
+
+// internet banking page
+.bank-platform{
+    width: 100%;
+    border: 1px solid $White;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: $White;
+    font-family: $text-fonts;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    // line-height: 0 !important;
+    
+    @include mobile{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.De-italic{
+    width: 80%;
+    
+    p{
+        font-style: italic;
+        color: $Brown;
+        font-family: $text-fonts;
+    }
+}
+
+.lofi-wireframe{
+    @include Display($display: flex, $justify-content: center, $align-items: center,);
+    // width: 70%;
+    // border: 1px solid red;
+    img{
+
+        width: 85%;  
+        @include mobile{
+            width: 95%;
+        }
+    }
+}
+
+.empathy-container{
+    // width: 100%;
+    @include Display($display: flex, $justify-content: center, $align-items: center,);
+    margin-bottom: 60px;
+
+    .empathy-map{
+        width: 60%;
+
+        @include mobile{
+            width: 100%;
+        }
+    }
+}
+
+// social NfT platform page
+
+.flex-wrap-container{
+    @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+    margin-bottom: 60px;
+    position: relative;
+    
+    width: 100%;
+    
+    .wrap1{
+        width: 100%;
+        @include Display($display: flex, $justify-content: space-between, $align-items: center);
+
+        margin-bottom: 35px;
+
+        @include mobile{
+            @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+        }
+
+        img:first-child{
+            @include mobile{
+                margin-bottom: 35px;
+            }
+        }
+
+        img{
+            // max-width: 800vw;
+            width: 48%;
+    
+            @include mobile{
+                width: 100%;
+            }
+        }
+    }
+
+    .wrap2{
+        width: 100%;
+        @include Display($display: flex, $justify-content: center, $align-items: center,);
+
+        img{
+            // max-width: 800vw;
+            width: 48%;
+    
+            @include mobile{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.Grid-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+
+    @include mobile{
+        grid-template-columns: 1fr; 
+        gap: 20px 0;  
+    }
+
+    img{
+        width: 100%;
+        @include mobile{
+            width: 100%;
+            // height: auto;
+        }
+    }
+}
+
+
+.personas{
+    position: relative;
+    // border: 1px solid red;
+    @include Display($display: flex, $justify-content: center, $align-items: center);
+    gap: 0 10px;
+
+    img{
+        width: 33%;
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    @include mobile{
+        @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+        gap: 10px 0;
+    }
+}
+
+
+// Saas B2B and E pharmacy website redesign
+.disclosure-area{
+    @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+    width: 70%;
+    background-color: $Fade-black;
+    margin-bottom: 60px;
+    padding: 40px 0;
+
+    @include mobile{
+        width: 90%;
+    }
+    
+    div{
+        // border: 1px solid red;
+        width: 90%;     
+    }
+
+    p{
+        font-family: $text-fonts;
+        color: $Dark-gray; 
+        font-size: 1rem;
+        line-height: 2;
+    }
+}
+
+ 

@@ -1,0 +1,47 @@
+@mixin Display($display: null, $align-items: null, $justify-content: null, $flex-direction: null,) {
+    @if $display {
+      display: $display;
+    }
+    @if $align-items {
+      align-items: $align-items;
+    }
+    @if $justify-content {
+      justify-content: $justify-content;
+    }
+    @if $flex-direction {
+      flex-direction: $flex-direction;
+  }
+};
+
+
+@mixin Overlay($width: null, $position: null, $height: null, $z-index: null,) {
+    @if $width {
+        width: $width;
+    }
+    @if $position {
+        position: $position;
+    }
+    @if $height {
+        height: $height;
+    }
+    @if $z-index {
+        z-index: $z-index;
+    }
+}
+
+
+@mixin tablet {
+    @media screen and (max-width: 1000px){
+        @content
+    }
+};
+
+
+
+@mixin mobile {
+    @media screen and (max-width: 800px){
+        @content
+    }  
+};
+
+

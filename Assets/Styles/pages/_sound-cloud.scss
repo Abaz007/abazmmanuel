@@ -1,0 +1,223 @@
+
+.ideate-images{
+    @include Display($display: flex, $justify-content: space-between,);
+    width: 60%;
+    position: relative;
+    margin-bottom: 60px;
+    @include mobile{
+        @include Display($display: flex, $justify-content: space-between, $align-items: center, $flex-direction: column);
+        width: 90%;
+    }
+    
+    img{
+        width: 20%;
+        @include mobile{
+
+            width: 60%;
+        }
+    }
+
+    img:not(:last-child){
+        @include mobile{
+            margin-bottom: 30px;
+        }
+    }
+
+    img:nth-child(3){
+
+        margin-top: -25px;
+        @include mobile{
+            margin-top: auto;
+        }
+    }
+
+
+}
+
+// visual design
+.visual-style-wrapper{
+    width: 60%;
+
+    @include mobile{
+        width: 90%;
+    }
+    .visual-sub-heading{
+        color: $Dark-gray;
+        line-height: 2;
+        font-size: 1rem;
+        font-family: $text-fonts;
+    }
+
+}
+
+.color-visual{
+    @include Display($display: flex, $justify-content: space-between);
+    width: 100%;
+    margin-bottom: 80px;
+    padding-top: 20px;
+    border-top: 1px solid $Dark-gray;
+    
+
+
+    @include mobile{
+        width: none;
+        margin-bottom: 50px;
+    }
+
+
+    img:nth-child(1) {
+        width: 25%;
+        @include mobile{
+            width: 28%;
+        }
+    }
+    
+    img:nth-child(2) {
+        width: 20%;
+        margin-top: -40px;
+        @include mobile{
+            margin-top: -15px; 
+            width: 22%;
+        }
+    }
+    
+    img:nth-child(3) {
+        width: 20%;
+        margin-top: -40px;
+        @include mobile{
+            margin-top: -15px;
+            width: 22%; 
+        }
+    }
+    
+    img:nth-child(4) {
+        width: 20%;
+        margin-top: -40px;
+        @include mobile{
+            margin-top: -15px;
+            width: 22%; 
+        }
+    }
+}
+
+.typography-visual{
+    @include Display($display: flex, $justify-content: space-between);
+    width: 100%;
+    margin-bottom: 80px;
+    padding: 60px 0;
+    border-top: 1px solid $Dark-gray;
+    border-bottom: 1px solid $Dark-gray;
+    @include mobile{
+        padding: 30px 0;
+    }
+
+}
+
+.typography{
+    width: 40%;
+    h2{
+      font-family: $Mulish; 
+      color: $Black-Brown;
+      font-size: 3.2rem; 
+      margin-left: 10px;
+      @include mobile{
+        font-size: 2rem;
+      }
+    }
+    p{
+        color: $Black-Brown;
+        font-family: $text-fonts;
+        @include mobile{
+            font-size: 0.7rem;
+        }
+    }
+
+    .blueish{
+        color: #23A6D4;
+    }
+}
+
+.lettering{   
+    width: 45%;
+    @include mobile{
+        width: 60%;
+    }
+
+    p{
+        color:$White;
+        font-family: $Mulish;
+        word-spacing: 1.2em;
+        @include mobile{
+            font-size: 0.7rem;
+        }
+    }
+}
+
+
+
+.midfi-wireframe{
+    @include Display($display: flex, $justify-content: space-between,);
+    width: 100%;
+    @include mobile{
+        @include Display($display: flex, $justify-content: space-between, $align-items: center, $flex-direction: column);
+        width: 100%;
+    }
+    
+    img{
+        width: 20%;
+        @include mobile{
+
+            width: 50%;
+        }
+    }
+
+}
+
+.mockup-wrapper{
+    width: 70%;
+    @include Display($display: flex, $justify-content: space-between,);
+    margin-bottom: 60px;
+    @include mobile{
+        @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);  
+        width: none;
+        margin-bottom: 20px;
+    }
+
+    img{
+        width: 30%;
+        @include mobile{
+            width: 100%;
+        }
+    }
+}
+
+.mockup-wrapper2{
+    width: 70%;
+    @include Display($display: flex, $justify-content: space-between,);
+    margin-bottom: 60px;
+    @include mobile{
+        @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);  
+        width: none;
+        margin-bottom: 20px;
+    }
+
+    div{
+        @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+        width: 30%;
+        @include mobile{
+            width: 100%;
+        }
+        
+        img{
+            width: 100%; 
+        }
+    }
+
+    img{
+        width: 30%;
+        @include mobile{
+            width: 100%;
+        }
+        // border: 1px solid red;
+    }
+}

@@ -1,0 +1,59 @@
+.carousel-container{
+    @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+    margin-bottom: 30px;
+}
+.carousel{
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 65%;
+    cursor: grab;
+    
+    // margin-bottom: 60px;
+
+    @include mobile{
+        width: 100%;
+    }
+
+    .carousel-item {
+        width: 80%;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+}
+  
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel{
+    -ms-overflow-style: none; /* IE and Edge */
+     scrollbar-width: none; /* Firefox */
+}
+
+.carousel-text{
+    width: 60%;
+    margin-bottom: 15px;
+    // border: 1px solid red;
+
+    @include mobile{
+        width: 90%;
+    }
+    
+    h5{
+        line-height: 2.5;
+        font-weight: bold;
+        color: white;
+        font-family: $header-fonts;
+        font-size: 1rem;
+    }
+    
+    p{
+        color: $Dark-gray; 
+        font-family: $text-fonts;
+        font-size: 15px;
+        line-height: 2;
+    }
+}

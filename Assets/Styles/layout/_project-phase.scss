@@ -1,0 +1,64 @@
+// sound-cloud-page
+
+.project-phase-wrapper{
+    width: 60%;
+
+    @include mobile{
+        width: 90%;
+        // border: 1px solid red;
+    }
+
+    .project-phase{
+        @include Display($display: flex, $justify-content: space-between, $align-items: center);
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        // border: 1px solid red;
+    
+        @include mobile{
+            width: none;
+        }
+    
+        .right-arrow{
+            width: 70px;
+            margin: 0 5px;
+            @include mobile{
+                width: auto;
+                margin: 0 1px;
+            }
+        }
+    }
+}
+
+.phase{
+    @include Display($display: flex, $justify-content: space-between, $align-items: center, $flex-direction: column);
+    border: 1px solid $Green;
+    text-align: center;
+    // flex-basis: calc(100% - 10px); /* 4 columns with gap */
+    width: 50%;
+    // height: 0;
+    @include Display($display: flex, $align-items: center, $flex-direction: column);
+    padding: 0;
+    margin: 0;
+
+
+    div{
+        @include Display($display: flex, $align-items: center, $flex-direction: column);
+        margin: 20% 0;
+
+        p{
+            color: $Light-gray;
+            font-family: $text-fonts;
+            font-size: 1rem;
+    
+            @include mobile{
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    img{
+        width: 30px;
+        margin-bottom: 10px;
+    }
+}

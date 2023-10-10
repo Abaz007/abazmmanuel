@@ -1,0 +1,1412 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Mulish:wght@300&display=swap");
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Roman.ttf") format("truetype"), url("../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Roman.woff") format("woff"), url("../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Roman.woff2") format("woff2"), url("../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Roman.eot") format("eot");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Bold.ttf") format("truetype"), url("../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Bold.woff") format("woff"), url("../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Bold.woff2") format("woff2"), url("../Fonts/Neue Haas Grotesk/NeueHaasDisplay-Bold.eot") format("eot");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "DM Mono";
+  src: url("../Fonts/DM_Mono/DMMono-Regular.woff2") format("woff2"), url("../Fonts/DM_Mono/DMMono-Regular.woff") format("woff"), url("../Fonts/DM_Mono/DMMono-Regular.ttf") format("truetype"); /* Fallback for very old browsers */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.read-through-btn {
+  color: #0E9F6E;
+  border: 1px solid #0E9F6E;
+  background-color: transparent;
+  padding: 0.9rem 1.2rem;
+  margin-top: 15px;
+  text-decoration: none;
+  font-family: "DM Mono";
+  -webkit-user-select: none; /* For Safari 3+, Safari on iOS 3+ */
+  -moz-user-select: none; /* For Mozilla Firefox */ /* For Microsoft Edge */
+  user-select: none; /* Standard property */
+}
+@media screen and (max-width: 800px) {
+  .read-through-btn {
+    padding: 0.5rem 0.7rem;
+    margin-top: 10px;
+  }
+}
+
+.send-request-btn {
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  background-color: #0E9F6E;
+  padding: 0.9rem 1.2rem;
+  margin-top: 15px;
+  text-decoration: none;
+  font-family: "DM Mono";
+  -webkit-user-select: none; /* For Safari 3+, Safari on iOS 3+ */
+  -moz-user-select: none; /* For Mozilla Firefox */ /* For Microsoft Edge */
+  user-select: none; /* Standard property */
+}
+@media screen and (max-width: 800px) {
+  .send-request-btn {
+    padding: 0.5rem 0.7rem;
+  }
+}
+
+.line-break-component {
+  width: 80%;
+  opacity: 0.2;
+  border: 1px solid var(--white, #FFF); /* Adjust the thickness as needed */
+  height: 0;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 800px) {
+  .line-break-component {
+    width: 95%;
+    margin-bottom: 3rem;
+    margin-top: 0;
+  }
+}
+
+.span-heading {
+  color: #FFFFFF;
+  line-height: 2;
+  font-size: 1.5rem;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 500;
+}
+
+.span-sub-heading {
+  color: #FFFFFF;
+  line-height: 2;
+  font-size: 1rem;
+  font-family: "DM Mono";
+}
+
+.primary-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.black-bg {
+  background-color: #000000;
+}
+
+.green-text {
+  color: #0E9F6E !important;
+}
+
+.customize-width {
+  width: 100% !important;
+}
+
+.bottom-spacing {
+  margin-bottom: 15px;
+}
+
+.bottom-spacing2 {
+  margin-bottom: 30px;
+}
+
+.De-link {
+  text-decoration: none;
+  color: #0E9F6E;
+}
+
+.De-link2 {
+  text-decoration: none;
+  color: #9FA6B2;
+}
+
+.auto-height {
+  height: auto;
+}
+
+.margin-top {
+  margin-top: -130px;
+}
+@media screen and (max-width: 800px) {
+  .margin-top {
+    margin-top: 0;
+  }
+}
+
+.weight {
+  font-weight: 800;
+}
+
+.active {
+  display: flex !important;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Style the navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white; /* White border */
+  color: white;
+  width: 90%;
+  padding: 20px 20px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    flex-direction: column;
+    position: relative;
+    background-color: #000000;
+    padding: 15px 10px;
+    margin-top: 20px;
+    width: 95%;
+  }
+}
+
+/* Style the navigation list */
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .nav-list {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}
+
+/* Style the logo */
+@media screen and (max-width: 800px) {
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .logo img {
+    width: 60%;
+    z-index: 12;
+  }
+}
+
+/* Style the list items */
+.nav-item {
+  margin-right: 1.2rem;
+  cursor: pointer;
+  font-family: "DM Mono";
+}
+@media screen and (max-width: 800px) {
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+.nav-item a {
+  text-decoration: none;
+  color: #D2D6DC;
+}
+
+/* Style the last list item with green background */
+.green-bg {
+  background-color: #0E9F6E;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid transparent;
+  -webkit-user-select: none; /* For Safari 3+, Safari on iOS 3+ */
+  -moz-user-select: none; /* For Mozilla Firefox */ /* For Microsoft Edge */
+  user-select: none; /* Standard property */
+}
+@media screen and (max-width: 800px) {
+  .green-bg {
+    padding: 0.5rem 0.7rem;
+    white-space: nowrap;
+  }
+}
+
+/* Styles for the hamburger */
+.hamburger {
+  display: none;
+  /* Styles for the individual bars */
+}
+@media screen and (max-width: 800px) {
+  .hamburger {
+    width: 30px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer; /* Make it look clickable */
+  }
+}
+.hamburger .bar {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .hamburger .bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #D2D6DC;
+    border-radius: 2px;
+    transition: transform 0.3s;
+    transform-origin: center;
+  }
+}
+
+/* Styles for the X shape when clicked */
+.hamburger.active .bar:first-child {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger.active .bar:last-child {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  .hero {
+    position: relative;
+  }
+}
+
+.years-of-experience-wrapper {
+  display: flex;
+  justify-content: right;
+  margin-top: 40px;
+  width: 90%;
+  padding: 0 30px;
+}
+@media screen and (max-width: 800px) {
+  .years-of-experience-wrapper {
+    width: 95%;
+    padding: 0;
+    margin-top: 40px;
+  }
+}
+
+.years-of-experience {
+  max-width: 100px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.years-of-experience h2 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: clamp(2.2rem, 7vw, 4rem);
+  font-weight: bold;
+  font-family: "Neue Haas Grotesk Display Pro";
+}
+.years-of-experience .overlay1 {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 9;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.years-of-experience-text {
+  width: 100%;
+  z-index: 10;
+}
+.years-of-experience-text p {
+  font-family: "DM Mono";
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 10;
+}
+@media screen and (max-width: 800px) {
+  .years-of-experience-text p {
+    font-size: 0.8rem;
+  }
+}
+
+.personal-introduction-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+@media screen and (max-width: 800px) {
+  .personal-introduction-container {
+    height: 35vh;
+  }
+}
+
+.personal-introduction {
+  width: -moz-fit-content; /* For Firefox */ /* For WebKit-based browsers like Safari */
+  width: fit-content; /* Standard */
+  height: -moz-fit-content; /* For Firefox */ /* For WebKit-based browsers like Safari */
+  height: fit-content; /* Standard */
+  position: relative;
+}
+.personal-introduction .i-am {
+  font-family: "DM Mono";
+  color: #FFFFFF;
+  text-align: left;
+}
+.personal-introduction h1 {
+  color: #FFFFFF;
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  margin: 0;
+  padding: 0;
+  line-height: 0.9;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: bold;
+}
+.personal-introduction .overlay2 {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  top: 0;
+}
+.personal-introduction .design-passionately {
+  font-size: clamp(1rem, 1.4vw, 1rem);
+  z-index: 10;
+  position: absolute;
+  font-family: "DM Mono";
+  max-width: 100%;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(210, 214, 220, 0.5);
+  font-family: "DM Mono";
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    border-top: none;
+  }
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+@media screen and (max-width: 800px) {
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    border-top: 1px solid #D2D6DC;
+    padding-top: 10px;
+  }
+}
+.footer-container div:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 800px) {
+  .footer-container div {
+    text-align: center;
+  }
+}
+.footer-container p, .footer-container a {
+  color: #FFFFFF;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+.footer-container span {
+  color: #6B7280;
+  line-height: 2;
+  font-size: 1rem;
+}
+.footer-container .socials {
+  display: flex;
+  gap: 10px;
+}
+
+.book-a-chat {
+  width: 100%;
+  margin-bottom: 80px;
+  background-color: #1C1C1E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  .book-a-chat {
+    margin-bottom: 60px;
+  }
+}
+.book-a-chat div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+.book-a-chat h4 {
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-family: "Neue Haas Grotesk Display Pro";
+  text-align: center;
+}
+.book-a-chat p {
+  color: #9FA6B2;
+  margin-bottom: 1rem;
+  font-family: "DM Mono";
+  font-weight: 500;
+  text-align: center;
+}
+.book-a-chat a {
+  padding: 0.9rem 1.2rem;
+  color: #FFFFFF;
+  background-color: #0E9F6E;
+  border: 1px solid transparent;
+  font-family: "DM Mono";
+  cursor: pointer;
+  text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .book-a-chat a {
+    padding: 0.5rem 0.7rem;
+  }
+}
+
+.penultimate-footer {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1C1C1E;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 800px) {
+  .penultimate-footer {
+    width: 90%;
+    margin-bottom: 60px;
+  }
+}
+.penultimate-footer h4 {
+  color: #FFFFFF;
+  margin: 1.2rem 0px;
+  text-align: center;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.penultimate-footer .break-line {
+  width: 90%;
+  opacity: 0.4;
+  height: 1px;
+  background-color: #FFFFFF;
+  margin-bottom: 1.8rem;
+}
+@media screen and (max-width: 800px) {
+  .penultimate-footer .break-line {
+    width: 100%;
+  }
+}
+
+.flex-container {
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-container div {
+  border: 1px solid #D2D6DC;
+  padding: 0.5rem 1rem;
+  font-family: "DM Mono";
+  font-size: 14px;
+  text-align: center;
+}
+.flex-container div a {
+  text-decoration: none;
+  color: #D2D6DC;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  width: 65%;
+  cursor: grab;
+}
+@media screen and (max-width: 800px) {
+  .carousel {
+    width: 100%;
+  }
+}
+.carousel .carousel-item {
+  width: 80%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel-text {
+  width: 60%;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 800px) {
+  .carousel-text {
+    width: 90%;
+  }
+}
+.carousel-text h5 {
+  line-height: 2.5;
+  font-weight: bold;
+  color: white;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 1rem;
+}
+.carousel-text p {
+  color: #9FA6B2;
+  font-family: "DM Mono";
+  font-size: 15px;
+  line-height: 2;
+}
+
+.project-phase-wrapper {
+  width: 60%;
+}
+@media screen and (max-width: 800px) {
+  .project-phase-wrapper {
+    width: 90%;
+  }
+}
+.project-phase-wrapper .project-phase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 800px) {
+  .project-phase-wrapper .project-phase {
+    width: none;
+  }
+}
+.project-phase-wrapper .project-phase .right-arrow {
+  width: 70px;
+  margin: 0 5px;
+}
+@media screen and (max-width: 800px) {
+  .project-phase-wrapper .project-phase .right-arrow {
+    width: auto;
+    margin: 0 1px;
+  }
+}
+
+.phase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid #0E9F6E;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.phase div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20% 0;
+}
+.phase div p {
+  color: #E5E7EB;
+  font-family: "DM Mono";
+  font-size: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .phase div p {
+    font-size: 0.7rem;
+  }
+}
+.phase img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.container-header-text {
+  color: #FFFFFF;
+  width: 100%;
+  line-height: 1;
+  margin-bottom: 60px;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  .container-header-text {
+    margin-bottom: 40px;
+  }
+}
+.container-header-text h2 {
+  font-size: clamp(2.2rem, 7vw, 4rem);
+  font-family: "Neue Haas Grotesk Display Pro";
+}
+.container-header-text .overlay3 {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 9;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  top: 10px;
+}
+
+.image-container {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 90px;
+  width: 100%;
+  position: relative;
+  background-color: #1C1C1E;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  .image-container {
+    margin-bottom: 60px;
+  }
+}
+.image-container img {
+  width: 100%;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.image-container .adjust-width {
+  width: 80% !important;
+}
+@media screen and (max-width: 800px) {
+  .image-container .adjust-width {
+    width: 80% !important;
+  }
+}
+
+.image-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+@media screen and (max-width: 800px) {
+  .image-container div {
+    margin: 25px 0;
+  }
+}
+.image-container div h3 {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.1rem;
+  font-family: "Neue Haas Grotesk Display Pro";
+}
+@media screen and (max-width: 800px) {
+  .image-container div h3 {
+    font-size: 1.7rem;
+    padding: 0 5px;
+  }
+}
+
+.previous-page-box {
+  width: 85%;
+  border: 1px solid #FFFFFF;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding-left: 25px;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .previous-page-box {
+    width: 90%;
+    padding-left: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 20px;
+  }
+}
+.previous-page-box p {
+  color: #FFFFFF;
+  padding-left: 5px;
+  font-family: "DM Mono";
+}
+.previous-page-box a, .previous-page-box img {
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+}
+
+.project-title {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 60px;
+  padding-left: 25px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  width: 85%;
+}
+@media screen and (max-width: 800px) {
+  .project-title {
+    width: 90%;
+    padding-left: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.project-title span {
+  font-family: "DM Mono";
+  line-height: 2;
+}
+.project-title h1 {
+  color: #FFFFFF;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: bolder;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+.content-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.content-wrapper h5 {
+  line-height: 2.5;
+  color: white;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 1.2rem;
+}
+.content-wrapper p {
+  font-family: "DM Mono";
+  color: #9FA6B2;
+  font-size: 1rem;
+  line-height: 2;
+}
+.content-wrapper li {
+  color: #9FA6B2;
+  font-size: 15px;
+  line-height: 2;
+  padding-left: 15px;
+  list-style-type: none;
+  position: relative;
+  font-family: "DM Mono";
+}
+.content-wrapper li::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #9FA6B2;
+  margin-right: 10px;
+  top: 12px;
+  left: 5px;
+}
+
+.custom-list-style-type {
+  position: relative;
+  padding-left: 15px;
+}
+
+.custom-list-style-type::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #9FA6B2;
+  margin-right: 10px;
+  top: 10px;
+  left: 5px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+.image-wrapper img {
+  width: 48%;
+}
+@media screen and (max-width: 800px) {
+  .image-wrapper img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .image-wrapper img:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+.custom-container {
+  width: 80%;
+  border-top: 1px solid #1C1C1E;
+  border-bottom: 1px solid #1C1C1E;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 60px;
+  color: #0E9F6E;
+  font-family: "DM Mono";
+  font-weight: 7000;
+}
+@media screen and (max-width: 800px) {
+  .custom-container {
+    width: 95%;
+  }
+}
+
+.design-showcase {
+  margin-bottom: 90px;
+}
+@media screen and (max-width: 800px) {
+  .design-showcase {
+    margin-bottom: 60px;
+  }
+}
+
+.bank-platform {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #FFFFFF;
+  font-family: "DM Mono";
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 800px) {
+  .bank-platform {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.De-italic {
+  width: 80%;
+}
+.De-italic p {
+  font-style: italic;
+  color: #70685B;
+  font-family: "DM Mono";
+}
+
+.lofi-wireframe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lofi-wireframe img {
+  width: 85%;
+}
+@media screen and (max-width: 800px) {
+  .lofi-wireframe img {
+    width: 95%;
+  }
+}
+
+.empathy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.empathy-container .empathy-map {
+  width: 60%;
+}
+@media screen and (max-width: 800px) {
+  .empathy-container .empathy-map {
+    width: 100%;
+  }
+}
+
+.flex-wrap-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+  position: relative;
+  width: 100%;
+}
+.flex-wrap-container .wrap1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 800px) {
+  .flex-wrap-container .wrap1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  .flex-wrap-container .wrap1 img:first-child {
+    margin-bottom: 35px;
+  }
+}
+.flex-wrap-container .wrap1 img {
+  width: 48%;
+}
+@media screen and (max-width: 800px) {
+  .flex-wrap-container .wrap1 img {
+    width: 100%;
+  }
+}
+.flex-wrap-container .wrap2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-wrap-container .wrap2 img {
+  width: 48%;
+}
+@media screen and (max-width: 800px) {
+  .flex-wrap-container .wrap2 img {
+    width: 100%;
+  }
+}
+
+.Grid-container {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+@media screen and (max-width: 800px) {
+  .Grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+}
+.Grid-container img {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .Grid-container img {
+    width: 100%;
+  }
+}
+
+.personas {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+}
+.personas img {
+  width: 33%;
+}
+@media screen and (max-width: 800px) {
+  .personas img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .personas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px 0;
+  }
+}
+
+.disclosure-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  background-color: #1C1C1E;
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+@media screen and (max-width: 800px) {
+  .disclosure-area {
+    width: 90%;
+  }
+}
+.disclosure-area div {
+  width: 90%;
+}
+.disclosure-area p {
+  font-family: "DM Mono";
+  color: #9FA6B2;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.ideate-images {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  position: relative;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 800px) {
+  .ideate-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+.ideate-images img {
+  width: 20%;
+}
+@media screen and (max-width: 800px) {
+  .ideate-images img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ideate-images img:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.ideate-images img:nth-child(3) {
+  margin-top: -25px;
+}
+@media screen and (max-width: 800px) {
+  .ideate-images img:nth-child(3) {
+    margin-top: auto;
+  }
+}
+
+.visual-style-wrapper {
+  width: 60%;
+}
+@media screen and (max-width: 800px) {
+  .visual-style-wrapper {
+    width: 90%;
+  }
+}
+.visual-style-wrapper .visual-sub-heading {
+  color: #9FA6B2;
+  line-height: 2;
+  font-size: 1rem;
+  font-family: "DM Mono";
+}
+
+.color-visual {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 80px;
+  padding-top: 20px;
+  border-top: 1px solid #9FA6B2;
+}
+@media screen and (max-width: 800px) {
+  .color-visual {
+    width: none;
+    margin-bottom: 50px;
+  }
+}
+.color-visual img:nth-child(1) {
+  width: 25%;
+}
+@media screen and (max-width: 800px) {
+  .color-visual img:nth-child(1) {
+    width: 28%;
+  }
+}
+.color-visual img:nth-child(2) {
+  width: 20%;
+  margin-top: -40px;
+}
+@media screen and (max-width: 800px) {
+  .color-visual img:nth-child(2) {
+    margin-top: -15px;
+    width: 22%;
+  }
+}
+.color-visual img:nth-child(3) {
+  width: 20%;
+  margin-top: -40px;
+}
+@media screen and (max-width: 800px) {
+  .color-visual img:nth-child(3) {
+    margin-top: -15px;
+    width: 22%;
+  }
+}
+.color-visual img:nth-child(4) {
+  width: 20%;
+  margin-top: -40px;
+}
+@media screen and (max-width: 800px) {
+  .color-visual img:nth-child(4) {
+    margin-top: -15px;
+    width: 22%;
+  }
+}
+
+.typography-visual {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 80px;
+  padding: 60px 0;
+  border-top: 1px solid #9FA6B2;
+  border-bottom: 1px solid #9FA6B2;
+}
+@media screen and (max-width: 800px) {
+  .typography-visual {
+    padding: 30px 0;
+  }
+}
+
+.typography {
+  width: 40%;
+}
+.typography h2 {
+  font-family: "Mulish", sans-serif;
+  color: #303030;
+  font-size: 3.2rem;
+  margin-left: 10px;
+}
+@media screen and (max-width: 800px) {
+  .typography h2 {
+    font-size: 2rem;
+  }
+}
+.typography p {
+  color: #303030;
+  font-family: "DM Mono";
+}
+@media screen and (max-width: 800px) {
+  .typography p {
+    font-size: 0.7rem;
+  }
+}
+.typography .blueish {
+  color: #23A6D4;
+}
+
+.lettering {
+  width: 45%;
+}
+@media screen and (max-width: 800px) {
+  .lettering {
+    width: 60%;
+  }
+}
+.lettering p {
+  color: #FFFFFF;
+  font-family: "Mulish", sans-serif;
+  word-spacing: 1.2em;
+}
+@media screen and (max-width: 800px) {
+  .lettering p {
+    font-size: 0.7rem;
+  }
+}
+
+.midfi-wireframe {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .midfi-wireframe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.midfi-wireframe img {
+  width: 20%;
+}
+@media screen and (max-width: 800px) {
+  .midfi-wireframe img {
+    width: 50%;
+  }
+}
+
+.mockup-wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 800px) {
+  .mockup-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: none;
+    margin-bottom: 20px;
+  }
+}
+.mockup-wrapper img {
+  width: 30%;
+}
+@media screen and (max-width: 800px) {
+  .mockup-wrapper img {
+    width: 100%;
+  }
+}
+
+.mockup-wrapper2 {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 800px) {
+  .mockup-wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: none;
+    margin-bottom: 20px;
+  }
+}
+.mockup-wrapper2 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+}
+@media screen and (max-width: 800px) {
+  .mockup-wrapper2 div {
+    width: 100%;
+  }
+}
+.mockup-wrapper2 div img {
+  width: 100%;
+}
+.mockup-wrapper2 img {
+  width: 30%;
+}
+@media screen and (max-width: 800px) {
+  .mockup-wrapper2 img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

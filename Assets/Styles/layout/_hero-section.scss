@@ -1,0 +1,130 @@
+.hero{
+    @include Display($display: flex, $flex-direction: column, $align-items:center);
+    @include mobile{
+        position: relative;
+    }
+
+}
+
+.years-of-experience-wrapper{
+    @include Display($display: flex, $justify-content: right,);
+    margin-top: 40px;
+    width: 90%;
+    padding: 0 30px;
+    @include mobile{
+        width: 95%;
+        padding: 0;
+        margin-top: 40px;
+    }
+}
+
+
+.years-of-experience{
+    max-width: 100px;
+    position: relative;
+    // width: 30%;
+    text-align: center;
+    // border: 1px solid red;
+    @include Display($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
+
+
+    h2{
+        text-align: center;
+        color: $White;
+        font-size: clamp(2.2rem, 7vw, 4rem);
+        font-weight: bold;
+        font-family: $header-fonts;  
+    }
+    
+    
+    .overlay1{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        z-index: 9;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+    
+    
+}
+
+.years-of-experience-text{
+    width: 100%;
+    z-index: 10;
+
+    
+    p{
+        font-family: $text-fonts;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+        color: $White;
+        z-index: 10;
+        
+        @include mobile{
+            font-size: 0.8rem
+        }
+    }
+}
+
+
+.personal-introduction-container{
+    width: 100%;
+    @include Display($display: flex, $justify-content: center);
+    height: 60vh;
+    @include mobile{ 
+        height: 35vh;
+    }
+}
+
+.personal-introduction{
+    width: -moz-fit-content; /* For Firefox */
+    width: -webkit-fit-content; /* For WebKit-based browsers like Safari */
+    width: fit-content; /* Standard */
+
+    height: -moz-fit-content; /* For Firefox */
+    height: -webkit-fit-content; /* For WebKit-based browsers like Safari */
+    height: fit-content; /* Standard */
+    position: relative; 
+    @include mobile{
+        // height: 60vh; 
+        // width: 80%; 
+    }
+    
+    .i-am{
+        font-family: $text-fonts;
+        color: $White;  
+        text-align: left;  
+    }
+    
+    h1{
+        color: $White;
+        font-size: clamp(3.5rem, 10vw, 8rem); 
+        margin: 0;
+        padding: 0;
+        line-height: 0.9;
+        font-family: $header-fonts;
+        font-weight: bold;
+    }
+    
+    .overlay2{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        @include Display($display: flex, $justify-content: center, $align-items:center);
+        z-index: 9;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        top: 0;
+    }
+
+    .design-passionately{
+        font-size: clamp(1rem, 1.4vw, 1rem);
+        z-index: 10;
+        position: absolute;
+        font-family: $text-fonts;
+        max-width: 100%; 
+        margin: 0;
+        color: $White
+    }
+}
+
